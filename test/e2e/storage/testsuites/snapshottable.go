@@ -103,6 +103,11 @@ func (s *snapshottableTestSuite) DefineTests(driver TestDriver, pattern testpatt
 	f := framework.NewDefaultFramework("snapshotting")
 
 	ginkgo.It("should create snapshot with defaults [Feature:VolumeSnapshotDataSource]", func() {
+		fmt.Println("TEST - GG")
+
+	})
+
+	ginkgo.It("should create snapshot with defaults [Feature:VolumeSnapshotDataSource]", func() {
 		cs := f.ClientSet
 		dc := f.DynamicClient
 
